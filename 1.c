@@ -1,15 +1,17 @@
-#include<stdio.h>
-int main() {
-int i,n;
-printf("Enter the number of elements \n");
-scanf("%d",&n);
-int a[n];
-for(i=0;i<n;i++) {
-printf("enter element %d:",i+1);
-scanf("%d",&a[i]);  }
-printf("Entered elements are : ");
-for(i=0;i<n;i++) {
-printf("%d ",a[i]);}
-return 0;
-}
-
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+ char a[100];
+ int length;
+ char str[100];
+ int i;
+ printf("Enter the String\n");
+ gets(str);
+ for (i = 0; str[i] != '\0'; ++i);
+ printf("Length of String = %d\n", i);
+ printf("enter a string again to calculate its length using strlen function\n");
+ scanf("%s", a);
+ length = strlen(a);
+ printf("Length of the string = %d\n", length);
+ return 0;}
